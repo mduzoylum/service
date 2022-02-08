@@ -14,10 +14,10 @@ class Convert
     public function convert()
     {
         switch ($this->type) {
-            case 'json':
+            case 'application/json':
                 $platform = new Json($this->product);
                 break;
-            case 'xml':
+            case 'application/xml':
                 $platform = new Xml($this->product);
                 break;
         }
