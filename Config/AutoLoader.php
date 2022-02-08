@@ -6,7 +6,7 @@ class AutoLoader
         $dosyalar = opendir($yol);
         while ($dosya = readdir($dosyalar)) {
             $search_word = preg_match("/$dosya/i", ".php");
-            if ($search_word) {
+            if ($dosya =='.' || $dosya == '..') {
                 continue;
             } else {
                 @include_once $yol . "/" . $dosya;
