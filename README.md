@@ -1,2 +1,2 @@
-# service
-Api Service For All Platforms
+# Api Service For All Platforms
+- Strateji Design Pattern kullanılmıştır.
